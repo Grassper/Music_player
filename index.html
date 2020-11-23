@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Music player</title>
+        <meta name="description" content="Music player for your collection">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="player-container">
+            <!-- songs -->
+            <div class="img-container">
+                <img src="img/jacinto-1.jpg" alt="album-image">
+            </div>
+            <h2 class="title">Smooth Criminal</h2>
+            <h3 class="artist-name">Michael Jackson</h3>
+            <audio src="music/jacinto-1.mp3"></audio>
+            <!-- Progress -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="duration-wrapper">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">2:06</span>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="player-controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play-circle main-button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+        <!-- scripts -->
+        <script src="./scripts.js"></script>
+    </body>
+</html>
